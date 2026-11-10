@@ -73,12 +73,9 @@
 
   /* top bar */
   .topbar {
-    display: flex; align-items: center; justify-content: space-between;
+    display: flex; align-items: center; justify-content: flex-end;
     font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim);
   }
-  .live { display: inline-flex; align-items: center; gap: 8px; }
-  .live i { width: 8px; height: 8px; border-radius: 50%; background: var(--live); box-shadow: 0 0 10px var(--live); animation: blink 1.6s steps(2, start) infinite; }
-  @keyframes blink { to { visibility: hidden; } }
   .icon-btn {
     width: 36px; height: 36px; display: grid; place-items: center;
     border-radius: 10px; border: 1px solid var(--panel-border); background: var(--bar);
@@ -230,7 +227,6 @@
 <body>
 <main class="wrap">
   <div class="topbar">
-    <span class="live"><i></i> Live</span>
     <button class="icon-btn" id="shareBtn" aria-label="Share this page">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="M16 6l-4-4-4 4"/><path d="M12 2v13"/></svg>
     </button>
